@@ -61,6 +61,7 @@ print(round(2,99))
 """
 
 #________________________________________________
+"""
 name = "Jimmy"
 
 age = 31
@@ -73,10 +74,40 @@ message2 = f"{name} is {age}"
 age = age -10
 message3 = "{kat} is {dog}".format(kat=name, dog=age)
 
-identical_text = f"""This is 
-        not very
-                long
-        text {message2}"""
+identical_text = f"This text {message2}"
 
 print(message3)
 print(identical_text)
+
+"""
+#________________________________________________
+message1 = "I love Python."
+message2 = "Not really:((!"
+message3 = """Multiline
+        message
+is 
+    going 
+        to
+            be
+fun
+"""
+print(message1)
+print(message2)
+# acces 1 letter at message 2
+print(message2[-1])
+print(message2[0:3])
+print(message2[-1:-3])  # it seems negative slice does not work
+print(message3)
+
+greet = 'Loop'
+
+# iterating through greet string
+for letter in greet:
+    print(letter)
+
+print(f"Len of variable greet is {len(greet)}")
+
+a = ""
+for i in greet:
+    a += i + i
+print(a)
